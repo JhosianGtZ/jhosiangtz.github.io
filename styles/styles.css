@@ -1,0 +1,182 @@
+/* ----------------------------STYLING-----------------------------------  */
+
+/* Poppins Font and Montserrat Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --black: #111;
+    --white: #f3f3f3;
+    --primary: #FCA311;
+    --montse: 'Montserrat', sans-serif;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: var(--montse);
+}
+
+.container {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+
+/* Header */
+
+.header {
+    height: 100vh;
+
+}
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    height: 60px;
+    background-color: rgba(17, 17, 17, .9);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+    height: 60px;
+
+}
+
+.nav-logo-a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--white);
+
+}
+
+.nav-logo-a h2 {
+    margin-left: 10px;
+}
+
+
+
+.nav-links a {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: var(--white);
+    border-bottom: 1px solid transparent;
+    text-align: center;
+    
+}
+
+.header-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header-text {
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    grid-gap: 1.3rem;
+
+}
+
+.header-text h1 {
+    font-family: 'Poppins'sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 90px;
+
+}
+
+.header-text p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+
+}
+
+.header-text a {
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--montse);
+    font-weight: 600;
+    color: var(--white);
+    font-size: 16px;
+    transition: all .5s ease-in-out;
+
+}
+
+.header-ilustration {
+    width: 45%;
+}
+
+.header-ilustration img {
+    width: 550px;
+    height: 550px;
+}
+
+/* HEADER ANIMATIONS */
+
+.nav-logo-a:hover {
+    color: var(--primary);
+    transition: all .5s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+    transition: all .5s ease-in-out;
+}
+
+.header-text a:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-5px);
+}
+
+
+/* PORTFOLIO STYLING */
+
+.portfolio{
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--white);
+    color: var(--black);
+}
+ 
+.portfolio-text{
+    text-align: center;
+}
+
+
+/* ----------------------------RESPONSIVE DESIGN-----------------------------------  */
