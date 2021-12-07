@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="home">
 
         <nav class="nav-menu">
 
@@ -23,10 +25,10 @@
                 </div>
 
                 <div class="nav-links">
-                    <a href="">Home</a>
-                    <a href="">Portfolio</a>
-                    <a href="">About</a>
-                    <a href="">Let's Talk</a>
+                    <a href="#home">Home</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Let's Talk</a>
                 </div>
             </div>
         </nav>
@@ -51,24 +53,83 @@
 
     </header>
 
-    <section class="portfolio ">
+    <section class="portfolio">
 
-        <div class="container">
+        <div class="container" id="portfolio">
             <div class="portfolio-text">
                 <h2>Portfolio.</h2>
                 <p>Check out my portfolio to see some of my recent work.</p>
             </div>
             <div class="portfolio-grid">
 
-                <a href="#">
-                    <img src="images/Rectangle 4.svg" alt="">
-                    <h3>Project Name</h3>
-                    <p>WEBSITE</p>
-                </a>
+                <div class="portfolio-card">
+                    <img  src="images/ilustration.svg">
+
+                    <div class="portfolio-card-text">
+                        <h3>John Doe</h3>
+                        <p class="title">CEO & Founder, Example</p>
+                    </div>
+                    <a href="#">View more</a>
+                </div>
+
+
+                <div class="portfolio-card">
+                    <img  src="images/ilustration.svg">
+
+                    <div class="portfolio-card-text">
+                        <h3>John Doe</h3>
+                        <p class="title">CEO & Founder, Example</p>
+                    </div>
+                    <a href="#">View more</a>
+                </div>
+
+
+                <div class="portfolio-card">
+                    <img  src="images/screenshot-d.png">
+
+                    <div class="portfolio-card-text">
+                        <h3>John Doe</h3>
+                        <p class="title">CEO & Founder, Example</p>
+                    </div>
+                    <a href="#">View more</a>
+                </div>
+
+                <div class="portfolio-card">
+                    <img  src="images/ilustration.svg">
+
+                    <div class="portfolio-card-text">
+                        <h3>John Doe</h3>
+                        <p class="title">CEO & Founder, Example</p>
+                    </div>
+                    <a href="#">View more</a>
+                </div>
+
+                <div class="portfolio-card">
+                    <img  src="images/ilustration.svg">
+
+                    <div class="portfolio-card-text">
+                        <h3>John Doe</h3>
+                        <p class="title">CEO & Founder, Example</p>
+                    </div>
+                    <a href="#">View more</a>
+                </div>
+
+                <div class="portfolio-card">
+                    <img  src="images/ilustration.svg">
+
+                    <div class="portfolio-card-text">
+                        <h3>John Doe</h3>
+                        <p class="title">CEO & Founder, Example</p>
+                    </div>
+                    <a href="#">View more</a>
+                </div>
+                
+
             </div>
+
             <div class="portfolio-text">
                 <a href="#">
-                    <p>View more projects</p><i></i>
+                    <p> <i class='bx bxl-github'></i> View more projects</p>
                 </a>
             </div>
         </div>
