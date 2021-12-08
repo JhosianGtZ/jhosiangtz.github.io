@@ -46,7 +46,7 @@ body {
     width: 100%;
     margin: 0;
     height: 60px;
-    background-color: rgba(17, 17, 17, .9);
+    background-color: rgba(17, 17, 17);
     z-index: 1;
 }
 
@@ -276,6 +276,7 @@ body {
 }
 
 /* Portfolio animations */
+
 .portfolio-text a:hover {
     opacity: 0.8;
 }
@@ -293,6 +294,47 @@ body {
 }
 
 
+/* ABOUT STYLING */
+
+.about h2{
+    
+    margin-bottom: 3rem;
+}
+
+.about-content{
+    
+    margin-bottom: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.about-text{
+    width: 50%;
+    
+}
+
+.about-text p{
+    font-family: var(--montse);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-align: justify;
+}
+
+.about-photo{
+    
+    overflow: hidden;
+    border-radius: 5px;
+    height: 450px;
+}
+
+.about-photo img{
+    width: 100%;
+    object-fit: cover;
+}
 
 
 
