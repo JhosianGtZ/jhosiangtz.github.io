@@ -33,6 +33,38 @@ body {
     padding: 60px 0;
 }
 
+/* Button  */
+
+.btn {
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--montse);
+    font-weight: 600;
+    color: var(--white);
+    font-size: 16px;
+    transition: all .5s ease-in-out;
+    text-transform: uppercase;
+
+}
+
+/* Titles */
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    margin: .5rem 0;
+}
+
+
 
 /* Header */
 
@@ -46,7 +78,7 @@ body {
     width: 100%;
     margin: 0;
     height: 60px;
-    background-color: rgba(17, 17, 17);
+    background-color: rgba(17, 17, 17, .9);
     z-index: 1;
 }
 
@@ -73,16 +105,19 @@ body {
 }
 
 
-
 .nav-links a {
+
     display: inline-block;
     height: 30px;
     line-height: 30px;
     margin-left: 1.5rem;
     text-decoration: none;
+    text-transform: uppercase;
     color: var(--white);
     border-bottom: 1px solid transparent;
     text-align: center;
+    font-size: 15px;
+    letter-spacing: 0.05em;
 
 }
 
@@ -120,23 +155,6 @@ body {
 
 }
 
-.header-text a {
-    display: inline-block;
-    width: 180px;
-    height: 50px;
-    line-height: 50px;
-    border: 1px solid #f3f3f3;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    font-family: var(--montse);
-    font-weight: 600;
-    color: var(--white);
-    font-size: 16px;
-    transition: all .5s ease-in-out;
-
-}
-
 .header-ilustration {
     width: 45%;
 }
@@ -159,7 +177,7 @@ body {
     transition: all .5s ease-in-out;
 }
 
-.header-text a:hover {
+.btn:hover {
     color: var(--primary);
     border-color: var(--primary);
     transform: translateY(-5px);
@@ -187,16 +205,15 @@ body {
     text-align: center;
 }
 
-.portfolio-text h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    font-weight: 600;
+.portfolio-text p {
+    font-family: var(--montse);
+    font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.05em;
-    margin: .5rem 0;
+    margin: 1rem 0;
 }
 
-.portfolio-text p {
+portfolio-card-title {
     font-family: var(--montse);
     font-size: 16px;
     line-height: 150%;
@@ -268,10 +285,10 @@ body {
     align-items: center;
     display: flex;
     font-size: 20px;
-    
+
 }
 
-.card-icons i{
+.card-icons i {
     margin-left: 5px;
 }
 
@@ -296,26 +313,38 @@ body {
 
 /* ABOUT STYLING */
 
-.about h2{
-    
-    margin-bottom: 3rem;
+.about {
+    margin-top: 1.5rem;
+    height: 100vh;
 }
 
-.about-content{
-    
+
+.about-content {
+
     margin-bottom: 0 auto;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
 }
 
 
-.about-text{
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 50%;
-    
 }
 
-.about-text p{
+.about-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    margin: 1.5rem 0;
+}
+
+.about-text p {
     font-family: var(--montse);
     font-weight: normal;
     font-size: 16px;
@@ -324,18 +353,114 @@ body {
     text-align: justify;
 }
 
-.about-photo{
-    
+.about-button {
+    margin-top: 1.5rem;
+}
+
+.about-photo {
+
     overflow: hidden;
+    margin-top: 1.5rem;
     border-radius: 5px;
     height: 450px;
 }
 
-.about-photo img{
+.about-photo img {
     width: 100%;
     object-fit: cover;
 }
 
+
+/* SERVICES STYLING */
+
+.services {
+    background-color: var(--white);
+    color: var(--black);
+    position: relative;
+}
+
+.services-text {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.services-cards {
+    
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 1rem;
+    
+}
+
+.service-card {
+    
+    background-color: var(--black);
+    width: 25%;
+    height: 15.625rem;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px var(--black);
+    cursor: pointer;
+    perspective: 150rem;
+    margin: 1rem 1rem;
+}
+
+.card-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15.625rem;
+    backface-visibility: hidden;
+    transition: all 0.6s ease;   
+    border-radius: 5px;
+}
+
+.card-side-front{
+    color: var(--white);
+}
+
+.card-side-back{
+    background-color: var(--white);
+    color: var(--black);
+    transform: rotateY(180deg);
+}
+
+.card-icon{
+    text-align: center;
+    
+}
+
+.card-icon i{
+    padding-bottom: 1rem;
+    font-size: 4rem;
+}
+.card-description{
+    padding: 0 2rem;
+}
+
+.card-description p{
+    font-weight: var(--montse);
+    letter-spacing: 0.05em;
+    line-height: 2rem;
+    text-align: center;
+    
+}
+
+/* ANIMATIONS */
+
+.service-card:hover .card-side-front {
+    transform: rotateY(180deg);
+  }
+
+.service-card:hover .card-side-back {
+    transform: rotate(0);
+  }
 
 
 /* ----------------------------RESPONSIVE DESIGN-----------------------------------  */
