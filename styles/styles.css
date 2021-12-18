@@ -1223,7 +1223,7 @@ input[type="button"]:hover {
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 405px) {
 
 
 
@@ -1231,6 +1231,10 @@ input[type="button"]:hover {
     .header-text h1 {
         font-size: 30px;
         margin-bottom: 0;
+    }
+
+    .header-text-animated p {
+        font-size: 20px;
     }
 
     .header-ilustration {
