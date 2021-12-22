@@ -437,6 +437,10 @@ portfolio-card-title {
     text-align: justify;
 }
 
+.about-link{
+    color: var(--gold);
+}
+
 .about-button {
     margin-top: 1.5rem;
 }
@@ -1224,7 +1228,6 @@ input[type="button"]:hover {
 
 
 @media screen and (max-width: 405px) {
-
 
 
 
