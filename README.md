@@ -9,4 +9,26 @@
 # Website Images
 
 HomePage
-![Homepage](images/UI/home.png)
+![Homepage](images/UI/home.png) 
+
+Portfolio
+![Portfolio](images/UI/portfolio.png)
+
+About
+![About](images/UI/about.png)
+
+Services
+![Services](images/UI/services.png)
+
+Contact
+![Contact](images/UI/contact.png)
+
+
+----------
+# Resources 
+
+1. [Icons: BoxIcons](https://boxicons.com/)
+
+2. [Ilustration: StorySet ](https://storyset.com/)
+
+

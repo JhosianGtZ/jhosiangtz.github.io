@@ -8,6 +8,9 @@
     --white: #f3f3f3;
     --gold: #DAA520;
     --montse: 'Montserrat', sans-serif;
+
+
+
 }
 
 * {
@@ -67,17 +70,12 @@ body {
 
 
 /* Header */
-
-.header {
+body{
     background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='69.282' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 7%, 1)'/><path d='M13.333-3.849v23.094M6.667-15.396l20 11.547M13.333-19.245l20 11.547M20 0v23.094m20-34.641l-6.667 3.849-6.666 3.849L20 0M0-11.547l6.667 3.849 6.666 3.849L20 0m0-23.094l20 11.547v23.094L20 23.094l-6.667-3.849-6.666-3.849L0 11.547v-23.094l6.667-3.849 6.666-3.849zM40-3.769L20 7.698m20-3.849l-16.253 9.384L20 15.396M6.667-7.698v23.094m6.666 50.037v23.094M6.667 53.886l20 11.547M13.333 50.037l20 11.547M20 69.282v23.094m20-34.641l-6.667 3.849-6.666 3.849L20 69.282M0 57.735l6.667 3.849 6.666 3.849L20 69.282m0-23.094l20 11.547v23.094L20 92.376l-6.667-3.849-6.666-3.849L0 80.829V57.735l6.667-3.849 6.666-3.849zm20 19.325L20 76.98m20-3.849L20 84.678M6.667 61.584v23.094m26.666-53.886v23.094m-6.666-34.641l20 11.547M33.333 15.396l20 11.547M40 34.641v23.094m20-34.641l-6.667 3.849-6.666 3.849L40 34.641M20 23.094l6.667 3.849 6.666 3.849L40 34.641m0-23.094l20 11.547v23.094L40 57.735l-6.667-3.849-6.666-3.849L20 46.188V23.094l6.667-3.849 6.666-3.849zm20 19.325L40 42.339m20-3.849L40 50.037M26.667 26.943v23.094M-6.667 30.792v23.094m-6.666-34.641l20 11.547M-6.667 15.396l20 11.547M0 34.641v23.094m20-34.641l-6.667 3.849-6.666 3.849L0 34.641m-20-11.547l6.667 3.849 6.666 3.849L0 34.641m0-23.094l20 11.547v23.094L0 57.735l-6.667-3.849-6.666-3.849L-20 46.188V23.094l6.667-3.849 6.666-3.849zm20 19.325L0 42.339m20-3.849L0 50.037m-13.333-23.094v23.094'  stroke-width='1' stroke='hsla(0, 0%, 0%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-
-    height: 100vh;
-
 }
-
 
 /* menu */
 .icon {
@@ -139,7 +137,6 @@ body {
     line-height: 30px;
     margin-left: 1.5rem;
     text-decoration: none;
-
     color: var(--white);
     border-bottom: 1px solid transparent;
     text-align: center;
@@ -152,6 +149,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100vh;
 }
 
 
@@ -208,27 +206,31 @@ body {
 
 .header-text-animated p span.cursor.typing {
     animation: none;
-  }
+}
 
-  /* BLINK ANIMATION */
-  @keyframes blink {
+/* BLINK ANIMATION */
+@keyframes blink {
     0% {
-      background-color: var(--gold);
+        background-color: var(--gold);
     }
+
     49% {
-      background-color: var(--gold);
+        background-color: var(--gold);
     }
+
     50% {
-      background-color: transparent;
+        background-color: transparent;
     }
+
     99% {
-      background-color: transparent;
+        background-color: transparent;
     }
+
     100% {
-      background-color: var(--gold);
+        background-color: var(--gold);
     }
-  }
-  
+}
+
 
 
 .header-ilustration {
@@ -431,10 +433,10 @@ portfolio-card-title {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.05em;
-    text-align: justify;
+    text-align: left;
 }
 
-.about-link{
+.about-link {
     color: var(--gold);
 }
 
@@ -585,6 +587,7 @@ portfolio-card-title {
 }
 
 .form input,
+button,
 textarea {
     font-family: 'Poppins'sans-serif;
     font-size: 16px;
@@ -600,7 +603,8 @@ textarea {
 
 }
 
-.form input[type="button"] {
+.form input[type="button"],
+button {
 
     background-color: var(--white);
     border-radius: 5px;
@@ -703,13 +707,109 @@ hr {
 
 
 
-input[type="button"]:hover {
+input[type="button"]:hover,
+button:hover {
     color: var(--white);
     background-color: transparent;
     border: 1px solid var(--white);
 
 }
 
+/* Articles */
+
+
+.articles {
+    background-color: #111;
+    padding: 40px 30px;
+}
+.article-image {
+    width: 100%;
+    margin-bottom: 1rem;
+    
+}
+.article-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    
+}
+
+.article-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-title h1 {
+    display: inline-block;
+    font-size: 25px;
+    color: var(--gold);
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.article-title p {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    border-top: 1px solid var(--gold);
+    border-bottom: 1px solid var(--gold);
+    margin-bottom: 2rem;
+}
+
+.article-text {
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width:500px) {
+    .article {
+        text-align: center;
+    }
+
+    .article-title h1 {
+        font-size: 2rem;
+    }
+
+    .article-text {
+        text-align: center;
+    }
+
+    .article-btn {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    .article-title h1 {
+        font-size: 1.5rem;
+    }
+}   
+
+/* Scrollbar */
+
+body::-webkit-scrollbar {
+    width: 6px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #111;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: none;
+}
 
 
 
@@ -755,14 +855,14 @@ input[type="button"]:hover {
 
 @media screen and (max-width: 1144px) {
 
-    .header-text h1{
+    .header-text h1 {
         font-size: 45px;
     }
 
-    .header-text-animated p{
+    .header-text-animated p {
         font-size: 35px;
     }
-    
+
 }
 
 
@@ -778,9 +878,6 @@ input[type="button"]:hover {
 
     }
 
-    .header {
-        height: 1000px;
-    }
 
     .header-hero {
 
@@ -989,9 +1086,6 @@ input[type="button"]:hover {
 
     }
 
-    .header {
-        height: 900px;
-    }
 
     .header-hero {
 
@@ -1136,7 +1230,7 @@ input[type="button"]:hover {
         font-size: 40px;
     }
 
-    .header-text-animated p{
+    .header-text-animated p {
         font-size: 30px;
     }
 
@@ -1156,7 +1250,7 @@ input[type="button"]:hover {
 
 @media screen and (max-width: 457px) {
 
-    .nav-logo-a h2{
+    .nav-logo-a h2 {
         font-size: 25px;
     }
 
@@ -1164,7 +1258,8 @@ input[type="button"]:hover {
         font-size: 35px;
         margin-bottom: 0;
     }
-    .header-text-animated p{
+
+    .header-text-animated p {
         font-size: 25px;
     }
 
@@ -1251,21 +1346,22 @@ input[type="button"]:hover {
 
 /* small and medium mobile */
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
 
-    h2{
+    h2 {
         font-size: 25px;
     }
 
-    .header-text h1{
+    .header-text h1 {
         font-size: 30px;
     }
+
     .header-text-animated p {
         font-size: 20px;
     }
 
 
-    .portfolio-text p{
+    .portfolio-text p {
         text-align: center;
     }
 
