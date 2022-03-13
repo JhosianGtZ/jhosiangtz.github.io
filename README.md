@@ -23,7 +23,28 @@ Services
 Contact
 ![Contact](images/UI/contact.png)
 
+----------
+# Mobile Screenshots
 
+HomePage
+
+![Homepage](images/UI/homemobile.png) 
+
+Portfolio
+
+![Portfolio](images/UI/portfoliomobile.png)
+
+About
+
+![About](images/UI/aboutmobile.png)
+
+Services
+
+![Services](images/UI/servicesmobile.png)
+
+Contact
+
+![Contact](images/UI/contactmobile.png)
 ----------
 # Resources 
 
